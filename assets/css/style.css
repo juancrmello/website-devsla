@@ -1,3 +1,7 @@
+:root {
+    --header-color: #000;
+}
+
 @font-face {
     font-family: GothamMedium;
     src: url(../fonts/GothamMedium.otf);
@@ -18,4 +22,57 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+header ul, header li {
+    list-style: none;
+}
+
+header .logo {
+    width: 120px;
+    margin-left: 20px;
+}
+
+header .middle ul {
+    display: flex;
+}
+
+header .middle li {
+    margin: 0 10px;
+}
+
+header .middle a {
+    text-decoration: none;
+    color: var(--header-color);
+    text-transform: uppercase;
+}
+
+header .rightside ul {
+    display: flex;
+}
+
+header .rightside li {
+    margin: 0 10px;
+}
+
+header .rightside a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--header-color);
+}
+
+header .menu--icon {
+    width: 18px;
+    height: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+header .menu--icon div {
+    height: 2px;
+    background-color: var(--header-color);
 }
